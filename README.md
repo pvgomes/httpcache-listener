@@ -2,6 +2,7 @@
 [![Build Status](https://img.shields.io/travis/dafiti/httpcache-listener/master.svg?style=flat-square)](https://travis-ci.org/dafiti/httpcache-listener)
 [![Scrutinizer Code Quality](https://img.shields.io/scrutinizer/g/dafiti/httpcache-listener/master.svg?style=flat-square)](https://scrutinizer-ci.com/g/dafiti/httpcache-listener/?branch=master)
 [![Code Coverage](https://img.shields.io/scrutinizer/coverage/g/dafiti/httpcache-listener/master.svg?style=flat-square)](https://scrutinizer-ci.com/g/dafiti/httpcache-listener/?branch=master)
+[![HHVM](https://img.shields.io/hhvm/dafiti/httpcache-listener.svg?style=flat-square)](https://travis-ci.org/dafiti/httpcache-listener)
 [![Latest Stable Version](https://img.shields.io/packagist/v/dafiti/httpcache-listener.svg?style=flat-square)](https://packagist.org/packages/dafiti/httpcache-listener)
 [![Total Downloads](https://img.shields.io/packagist/dt/dafiti/httpcache-listener.svg?style=flat-square)](https://packagist.org/packages/dafiti/httpcache-listener)
 [![License](https://img.shields.io/packagist/l/dafiti/httpcache-listener.svg?style=flat-square)](https://packagist.org/packages/dafiti/httpcache-listener)
@@ -29,7 +30,7 @@ use Pimple;
 
 $app = new Application();
 
-// You can use [dafiti/config-service-provider](https://github.com/dafiti/config-service-provider) to manage the config files
+// You can use dafiti/config-service-provider to manage the config files
 $app['config'] = new Pimple();
 $app['config']['http_cache'] = [
     'enabled' => true,

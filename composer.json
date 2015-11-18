@@ -19,6 +19,9 @@
         "issue": "https://github.com/dafiti/httpcache-listener/issues"
     },
     "minimum-stability": "dev",
+    "suggest": {
+        "dafiti/config-service-provider": "A simple way to manage config files in Silex"
+    },
     "require": {
         "php": ">=5.5.0",
         "silex/silex": "~1.3.4"
